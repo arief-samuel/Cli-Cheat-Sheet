@@ -4,13 +4,13 @@ A cli cheat sheet for Bash, Powershell, os command on my daily usage.
 
 ## Github CLI
 ```bash
-> gh auth login                                       # github auth login 
+❯ gh auth login                                       # github auth login 
 ? What account do you want to log into? GitHub.com
 ? What is your preferred protocol for Git operations? HTTPS
 ? Authenticate Git with your GitHub credentials? Yes
 ? How would you like to authenticate GitHub CLI? Login with a web browser
 
-> git init                                            # init a repo
+❯ git init                                            # init a repo
 Initialized empty Git repository in C:/Users/ephra-samuel/Documents/c#/github/Cli-Cheat-Sheet/.git/
 ❯ gh repo create
 ? Repository description a cheat sheet for bash, powersheell, dos command for my daily usage
@@ -19,7 +19,7 @@ Initialized empty Git repository in C:/Users/ephra-samuel/Documents/c#/github/Cl
 ✓ Created repository arifsamuel/Cli-Cheat-Sheet on GitHub
 ✓ Added remote https://github.com/arifsamuel/Cli-Cheat-Sheet.git
 
-> gh issue create                                      # crate an issue to github 
+❯ gh issue create                                      # crate an issue to github 
 Creating issue in arifsamuel/Cli-Cheat-Sheet
 
 ? Title This is a test issue
@@ -30,7 +30,7 @@ https://github.com/arifsamuel/Cli-Cheat-Sheet.git/issues/1
 
 ❯ git branch -m master main                            # change master branch to main
 
-> git push -u origin main                              # push to new branch called main
+❯ git push -u origin main                              # push to new branch called main
 Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
 remote:
 remote: Create a pull request for 'main' on GitHub by visiting:

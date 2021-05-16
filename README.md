@@ -2,6 +2,48 @@
 
 A cli cheat sheet for Bash, Powershell, os command on my daily usage.
 
+## Github CLI
+```bash
+> gh auth login                                       # github auth login 
+? What account do you want to log into? GitHub.com
+? What is your preferred protocol for Git operations? HTTPS
+? Authenticate Git with your GitHub credentials? Yes
+? How would you like to authenticate GitHub CLI? Login with a web browser
+
+> git init                                            # init a repo
+Initialized empty Git repository in C:/Users/ephra-samuel/Documents/c#/github/Cli-Cheat-Sheet/.git/
+❯ gh repo create
+? Repository description a cheat sheet for bash, powersheell, dos command for my daily usage
+? Visibility Public
+? This will add an "origin" git remote to your local repository. Continue? Yes
+✓ Created repository arifsamuel/Cli-Cheat-Sheet on GitHub
+✓ Added remote https://github.com/arifsamuel/Cli-Cheat-Sheet.git
+
+> gh issue create                                      # crate an issue to github 
+Creating issue in arifsamuel/Cli-Cheat-Sheet
+
+? Title This is a test issue
+? Body <Received>
+? What\`s next? Submit
+https://github.com/arifsamuel/Cli-Cheat-Sheet.git/issues/1 
+
+
+❯ git branch -m master main                            # change master branch to main
+
+> git push -u origin main                              # push to new branch called main
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'main' on GitHub by visiting:
+remote:      https://github.com/arifsamuel/Cli-Cheat-Sheet/pull/new/main
+
+remote:
+To https://github.com/arifsamuel/Cli-Cheat-Sheet.git
+ * [new branch]      main -> main
+Branch 'main' set up to track remote branch 'main' from 'origin'
+
+```
+
+
 ## Command History
 
 ```bash

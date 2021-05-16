@@ -1,8 +1,6 @@
-# a cli cheat sheet for bash, powersheel,dos command 
+# a CLI cheat sheet for Bash, Powershell, Dos command
 
-# Bash Cheat Sheet
-
- A cheat sheet for bash commands.
+A cli cheat sheet for Bash, Powershell, os command on my daily usage.
 
 ## Command History
 

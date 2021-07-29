@@ -2,7 +2,53 @@
 
 A cli cheat sheet for Bash, Powershell, os command on my daily usage.
 
+## Dotnet CLI
+
+```bash
+
+dotnet tool install -g Microsoft.dotnet-httprepl
+
+dotnet run
+
+dotnet new sln -n Quickstart 
+
+dotnet sln add .\src\IdentityServer\IdentityServer.csproj 
+
+dotnet user-secrets init
+
+dotnet user-secrets set ServiceSettings:ApiKey 4500bf3e77d8d82ed3d843dab6433242
+
+```
+
+
+## Powershell
+
+```bash
+
+❯ $PSVersionTable.PSVersion
+
+
+```
+
+## Kubernetes
+
+```bash
+
+❯ kubectl config current-context
+❯ kubectl create secret generic catalog-secrets --from-literal=mongodb-pasword=
+❯ kubectl get deployment
+❯ kubectl get pods
+❯ kubectl logs {pod_name}
+❯ kubectl logs {pod_name} -f
+❯ kubectl apply -f {.yaml file}
+❯ kubectl get statefulset
+❯ kubectl get pods
+❯ kubectl get deployment
+❯ kubectl scale deployment/catalog-deployment --replicas=3
+
+```
 ## Github CLI
+
 ```bash
 ❯ gh auth login                                       # github auth login 
 ? What account do you want to log into? GitHub.com
@@ -41,8 +87,55 @@ To https://github.com/arifsamuel/Cli-Cheat-Sheet.git
  * [new branch]      main -> main
 Branch 'main' set up to track remote branch 'main' from 'origin'
 
-```
+❯ git clone --depth 1                                    # shallow clone
+Speed Tip: If the complete repository history isn\'t needed then using a shallow clone will save significant time.
 
+❯ git fetch && git checkout BranchName   
+
+❯ git branch -M main
+
+❯ git push -u origin main                                 # Checkout branch
+
+```
+ I am Arief 🧑‍
+I am Arief🧑‍🚀
+## Docker CLI
+
+```bash
+❯ docker images -a                                                               # List
+
+❯ docker rmi Image images                                                        # Remove
+
+❯ docker system prune
+
+❯ docker system prune -a                                                         #
+
+❯ docker images -a |  grep "pattern"                                             # 
+
+❯ docker images -a | grep "pattern" | awk '{print $3}' | xargs docker rmi        # 
+
+❯ docker rmi $(docker images -a -q)                                              # 
+
+❯ docker ps -aBranchName                                                         # 
+❯ docker rm ID_or_Name ID_or_Name                                                # 
+❯ docker run --rm image_name                                                     # 
+❯ docker ps -a -f status=exited                                                  # 
+❯ docker rm $(docker ps -a -f status=exited -q)                                  #
+❯ docker ps -a -f status=exited                                                  # 
+❯ docker ps -a -f status=exited -f status=created                                # 
+❯ docker rm $(docker ps -a -f status=exited -f status=created -q)                # 
+❯ docker ps -a |  grep "pattern"                                                 # 
+❯ docker ps -a | grep "pattern" | awk '{print $1}' | xargs docker rm             # 
+❯ docker ps -a                                                                   # 
+❯ docker stop $(docker ps -a -q)                                                 #
+❯ docker rm $(docker ps -a -q)                                                   #
+❯ docker volume ls                                                               #
+❯ docker volume rm volume_name volume_name                                       #
+❯ docker volume ls -f dangling=true                                              #
+❯ docker volume prune                                                            #
+❯ docker rm -v container_name                                                    #
+❯ docker run -d --rm --name mongo -p 27017:27017 -v mongodbdata:/data/db -e MONGO_INITDB_ROOT_USERNAME=mongoadmin -e MONGO_INITDB_ROOT_PASSWORD=yourstrongpassword mongo
+```
 
 ## Command History
 
